@@ -18,7 +18,7 @@ app = commands.Bot(command_prefix='끠룱')
 
 
 access_token = os.environ["BOT_TOKEN"]
-token = access_token
+
 calcResult = 0
 
 @app.event
@@ -222,4 +222,4 @@ async def on_message(message):
         await message.channel.send(embed=embed)
 
 
-app.run(token)
+app.run(access_token)
