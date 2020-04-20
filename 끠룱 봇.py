@@ -17,8 +17,8 @@ from discord.utils import get
 app = commands.Bot(command_prefix='끠룱')
 
 
-
-token = "Njk2Mzg4MDEyNDM4NzE2NDI3.Xon_9A.Lt65Jfg_pvRgKVKSznjb4iQDSR0"
+access_token = os.environ["BOT_TOKEN"]
+token = access_token
 calcResult = 0
 
 @app.event
